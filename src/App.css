@@ -1,0 +1,93 @@
+:root {
+  --primary-bg-color: rgb(255, 255, 255);
+  --secondary-bg-color: rgb(156, 0, 0);
+  --hover-color: rgb(236, 236, 236);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Raleway', Helvetica, sans-serif
+}
+
+body {
+  height: 100vh;
+}
+
+.pd-5 {
+  padding: 5px;
+}
+
+.flex-apart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.light-alert {
+  background: var(--hover-color);
+  height: 75px;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  transition: color 250ms ease-in-out;
+}
+
+.light-alert:hover {
+  color: var(--secondary-bg-color);
+  transition: color 250ms ease-in-out;
+}
+
+.hero-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./imgs/hero-banner.png');
+  width: 100vw;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  box-shadow: 0 1px 3px 1px black;
+}
+
+.hero-banner:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(transparent 0%, black 100%);
+  z-index: 3;
+}
+
+.hero-text {
+  color: white;
+  text-align: center;
+  font-size: 4rem;
+  backdrop-filter: blur(1px);
+  z-index: 4;
+  padding: 5px;
+  display: inline-block;
+}
+
+@media screen and (max-width: 950px) {
+  
+}
