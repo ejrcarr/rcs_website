@@ -81,7 +81,7 @@ a {
 .hero-text {
   color: white;
   text-align: center;
-  font-size: 4rem;
+  font-size: clamp(2rem, 8vw,4rem);
   backdrop-filter: blur(1px);
   z-index: 4;
   padding: 5px;

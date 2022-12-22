@@ -22,6 +22,7 @@
   }
   
   .logo-short-text {
+    font-size: clamp(1.6rem, 4vw,3rem);
     padding: 5px;
     display: none;
   }
@@ -103,23 +104,29 @@
   .dropdown li {
     border-bottom: 1px solid rgb(255, 255, 255);
     border-radius: 0;
+    width: 100%;
     background: var(--primary-bg-color);
+    text-align: center;
+    font-weight: 400;
+    font-size: .9rem;
   }
   
-  .language-menu-item {
+  .resource-menu-item {
     position: relative;
   }
-  
-  .language-dropdown {
+
+  .resources-dropdown {
+    left: -2px;
     top: 35px;
-    left: 20px;
   }
-  
-  .language-menu-item:hover .language-dropdown {
+
+  .resource-menu-item:hover .resources-dropdown {
     opacity: 1;
     transition: opacity 250ms ease-in-out;
     pointer-events: auto;
   }
+
+
   
   .navbar-items-container li:hover {
     background: var(--hover-color);
@@ -133,5 +140,4 @@
     .logo-short-text {
       display: block;
     }
-  
   }

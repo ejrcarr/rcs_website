@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import logo from '../../imgs/rcs_logo.png';
+import LanguageContext from '../../context/language/languageContext';
 import './Footer.css';
 
 export const Footer = () => {
+	const languageContext = useContext(LanguageContext);
+	const { active } = languageContext;
+
 	return (
 		<footer className='footer-container flex-vertical'>
 			<div className='social-links-dock flex-center'>
 				<a
-					href='https://www.facebook.com/RoxboroCS/'
+					href='https://www.youtube.com/@rcscommunications9968'
 					target='_blank'
 					rel='noreferrer'
 				>
@@ -36,31 +40,39 @@ export const Footer = () => {
 				</a>
 			</div>
 			<div className='info-container flex-center'>
-				<div className='info-wrapper flex-center'>
-					<div className='location-container'></div>
-					<div className='contact-container flex-vertical'>
-						<img src={logo} alt='' />
-						<h3>Roxboro Community School</h3>
-						<p>
-							<i class='fas fa-map-marker-alt'></i> 115 Lake Drive Roxboro |
-							North Carolina 27573
-						</p>
-						<p>
-							<i class='fas fa-phone-square-alt'></i> 336-597-0020
-						</p>
-						<p>
-							<i class='fas fa-phone-square-alt'></i> 336-419-4551
-						</p>
-						<p>
-							<i class='fas fa-envelope'></i> information@roxborocs.org
-						</p>
-					</div>
-					<div className='links-container'></div>
+				<div className='location-container'></div>
+				<div className='contact-container flex-vertical'>
+					<img src={logo} alt='' />
+					<h3>Roxboro Community School</h3>
+					<p>
+						<i className='fas fa-map-marker-alt'></i> 115 Lake Drive Roxboro |
+						North Carolina 27573
+					</p>
+					<p>
+						<i className='fas fa-phone-square-alt'></i> 336-597-0020
+					</p>
+					<p>
+						<i className='fas fa-phone-square-alt'></i> 336-419-4551
+					</p>
+					<p>
+						<i className='fas fa-envelope'></i> information@roxborocs.org
+					</p>
 				</div>
+				<div className='links-container'></div>
 			</div>
-			<div className='copyright flex-center'>
-				<p>Copyright © 2022 Roxboro Community School. All rights reserved.</p>
-			</div>
+			{active === null && (
+				<div className='copyright flex-center'>
+					<p>Copyright © 2022 Roxboro Community School. All rights reserved.</p>
+				</div>
+			)}
+			{active !== null && (
+				<div className='copyright flex-center'>
+					<p>
+						Derechos de autor © 2022 Roxboro Community School. Reservados todos
+						los derechos.
+					</p>
+				</div>
+			)}
 		</footer>
 	);
 };

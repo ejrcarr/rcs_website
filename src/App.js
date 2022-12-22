@@ -1,18 +1,19 @@
 import './App.css';
-import { Alert } from './components/layout/Alert';
 import { Footer } from './components/layout/Footer';
-import { Hero } from './components/layout/Hero';
+import { Home } from './components/pages/Home';
 // import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Navbar } from './components/layout/Navbar';
+import { Navbar } from './components/layout/navbar/Navbar';
+import LanguageState from './context/language/LanguageState';
 
 function App() {
 	return (
-		<div className='App'>
-			<Navbar />
-			<Alert />
-			<Hero />
-			<Footer />
-		</div>
+		<LanguageState>
+			<div className='App'>
+				<Navbar />
+				<Home />
+				<Footer />
+			</div>
+		</LanguageState>
 	);
 }
 
