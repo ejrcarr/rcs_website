@@ -47,9 +47,12 @@ export const Navbar = () => {
 						<ul>
 							<li>Events</li>
 							<li>Enrollment</li>
-							<li className='resource-menu-item'>
+							<li className='menu-drop resource-menu-item'>
 								Resources{' '}
-								<i className='fa fa-caret-down' aria-hidden='true'></i>
+								<i
+									className='fa fa-caret-down dropdown-arrow'
+									aria-hidden='true'
+								></i>
 								<div className='dropdown resources-dropdown'>
 									<ul>
 										<li>Student</li>
@@ -60,8 +63,12 @@ export const Navbar = () => {
 								</div>
 							</li>
 							<li>News</li>
-							<li>
-								More <i className='fa fa-caret-down' aria-hidden='true'></i>
+							<li className='menu-drop more-menu-item'>
+								More{' '}
+								<i
+									className='fa fa-caret-down dropdown-arrow'
+									aria-hidden='true'
+								></i>
 							</li>
 						</ul>
 					</div>
@@ -85,8 +92,12 @@ export const Navbar = () => {
 						<ul>
 							<li>Eventos</li>
 							<li>Inscripión</li>
-							<li className='resource-menu-item'>
-								Recursos <i className='fa fa-caret-down' aria-hidden='true'></i>
+							<li className='menu-drop resource-menu-item'>
+								Recursos{' '}
+								<i
+									className='fa fa-caret-down dropdown-arrow'
+									aria-hidden='true'
+								></i>
 								<div className='dropdown resources-dropdown'>
 									<ul>
 										<li>Estudiantes</li>
@@ -97,8 +108,12 @@ export const Navbar = () => {
 								</div>
 							</li>
 							<li>Noticias</li>
-							<li>
-								Más <i className='fa fa-caret-down' aria-hidden='true'></i>
+							<li className='menu-drop more-menu-item'>
+								Más{' '}
+								<i
+									className='fa fa-caret-down dropdown-arrow'
+									aria-hidden='true'
+								></i>
 							</li>
 						</ul>
 					</div>

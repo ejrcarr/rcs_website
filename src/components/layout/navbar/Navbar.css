@@ -125,11 +125,18 @@
     transition: opacity 250ms ease-in-out;
     pointer-events: auto;
   }
-
-
   
   .navbar-items-container li:hover {
     background: var(--hover-color);
+  }
+
+  .dropdown-arrow {
+    transition: transform 250ms ease-in-out;
+  }
+
+  .menu-drop:hover .dropdown-arrow {
+    transition: transform 250ms ease-in-out;
+    transform: rotate(-180deg);
   }
 
   @media screen and (max-width: 950px) {
