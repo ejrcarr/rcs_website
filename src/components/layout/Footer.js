@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import logo from '../../imgs/rcs_logo.png';
 import LanguageContext from '../../context/language/languageContext';
+// import rcs_phone_app from '../../imgs/rcs-phone-app.png';
 import './Footer.css';
 
 export const Footer = () => {
@@ -40,7 +41,7 @@ export const Footer = () => {
 				</a>
 			</div>
 			<div className='info-container flex-center'>
-				<div className='location-container'></div>
+				<div className='links-container'></div>
 				<div className='contact-container flex-vertical'>
 					<img src={logo} alt='' />
 					<h3>Roxboro Community School</h3>
@@ -58,7 +59,7 @@ export const Footer = () => {
 						<i className='fas fa-envelope'></i> information@roxborocs.org
 					</p>
 				</div>
-				<div className='links-container'></div>
+				<div className='app-container'></div>
 			</div>
 			{active === null && (
 				<div className='copyright flex-center'>
