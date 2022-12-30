@@ -13,7 +13,7 @@ export const Card = ({ image, title, description }) => {
 				<p>{description}</p>
 				<a href='/' className='learn-more-link'>
 					Learn more <i className='fas fa-long-arrow-alt-right'></i>
-					<i class='fas fa-link'></i>
+					<i className='fas fa-link'></i>
 				</a>
 			</div>
 		</div>
