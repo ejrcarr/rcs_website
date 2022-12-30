@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import LanguageContext from '../../../context/language/languageContext';
 import './Navbar.css';
 import logo from '../../../imgs/rcs_logo.png';
+import { Link } from 'react-router-dom';
 import { Hamburger } from './Hamburger';
 
 export const Navbar = () => {
@@ -18,7 +19,7 @@ export const Navbar = () => {
 
 	return (
 		<div className='navbar-container flex-apart'>
-			<a href='/'>
+			<Link to='/'>
 				<div className='logo-container flex-center pd-5'>
 					<img className='navbar-logo' src={logo} alt='rcs logo' />
 					<h1 className='logo-long-text'>
@@ -28,7 +29,7 @@ export const Navbar = () => {
 					</h1>
 					<h1 className='logo-short-text'>RCS</h1>
 				</div>
-			</a>
+			</Link>
 
 			{/* ENGLISH VERSION */}
 			{active === null && (
@@ -37,7 +38,10 @@ export const Navbar = () => {
 						<ul>
 							<li>Staff</li>
 							<li>Careers</li>
-							<li>About Us</li>
+							<li>
+								<Link to='/about'>About Us</Link>
+							</li>
+
 							{/* Why RCS? */}
 							<li onClick={toggleSpanishSetting}>Español</li>
 							<li>Donate</li>

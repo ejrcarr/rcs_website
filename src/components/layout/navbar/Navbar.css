@@ -4,6 +4,10 @@
     border-bottom: 1px solid black;
     /* box-shadow: 0 0 5px black; */
   }
+
+  .navbar-container a {
+    color: black;
+  }
   
   .navbar-logo {
     width: clamp(15px, 10vw, 100px);
