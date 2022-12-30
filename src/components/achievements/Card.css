@@ -1,0 +1,91 @@
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px;
+}
+
+.display-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 300px;
+    box-shadow: var(--box-shadow-0);
+    cursor: pointer;
+}
+
+.display-card:hover img {
+    transform: scale(1.025);
+    transition: transform 300ms ease-in-out;
+}
+
+.display-card:hover .learn-more-link{
+    opacity: 1;
+    transition: opacity 250ms ease-in-out;
+}
+
+.display-card img {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    object-fit: cover;
+    clip-path: fill-box;
+    overflow: hidden;
+}
+
+.display-card .card-image {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.display-card .card-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 20%);
+    z-index: 555;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1 1 auto;
+    text-align: center;
+    padding: 15px;
+}
+
+.learn-more-link {
+    display: inline-block;
+    width: 150px;
+    color: var(--secondary-bg-color);
+    transition: opacity 100ms ease-in-out;
+}
+
+.card-content p {
+    display: inline-block;
+    padding: 10px;
+}
+
+.card-content a .fa-link {
+    display: none;
+}
+
+.card-content a:hover .fa-link {
+    display: inline;
+}
+
+.card-content a:hover .fa-long-arrow-alt-right {
+    display: none;
+}
+
+@media screen and (max-width: 950px) {
+}
+

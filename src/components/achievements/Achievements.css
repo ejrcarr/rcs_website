@@ -1,0 +1,45 @@
+.achievements-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 25px 50px;
+}
+
+.achievement-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    flex: 1 1 250px;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+.achievement-card i {
+    font-size: 5rem;
+    color: var(--dark-grey-color-0);
+    transition: color 300ms ease-in-out;
+}
+
+.achievement-card i:hover {
+    color: var(--secondary-bg-color);
+    transition: color 300ms ease-in-out;
+}
+
+.why-section {
+    padding: 10px;
+}
+.achievements-title {
+    letter-spacing: 1px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.achievements-title span {
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: var(--secondary-bg-color);
+}
+
