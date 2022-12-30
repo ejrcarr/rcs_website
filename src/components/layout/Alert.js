@@ -10,14 +10,14 @@ export const Alert = () => {
 				<h3>
 					Learn more about our response to COVID-19{' '}
 					<i className='fas fa-long-arrow-alt-right'></i>
-					<i class='fas fa-link'></i>
+					<i className='fas fa-link'></i>
 				</h3>
 			)}
 			{active !== null && (
 				<h3>
 					Aprender más sobre nuestra reacción a COVID-19{' '}
 					<i className='fas fa-long-arrow-alt-right'></i>
-					<i class='fas fa-link'></i>
+					<i className='fas fa-link'></i>
 				</h3>
 			)}
 		</div>
