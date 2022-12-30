@@ -6,7 +6,6 @@ export const Hamburger = () => {
 	const [navbarOpen, setNavbarOpen] = useState(false);
 	const handleToggle = () => {
 		setNavbarOpen(!navbarOpen);
-		document.querySelector('body').classList.toggle('darken');
 		document.querySelector('body').classList.toggle('fixed');
 	};
 
