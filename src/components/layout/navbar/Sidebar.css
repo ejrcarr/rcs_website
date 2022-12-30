@@ -24,15 +24,39 @@
     margin: 10px;
     padding: 10px;
     border-bottom: 1px solid lightgray;
+    cursor: pointer;
 }
 
 .closed {
     /* display: none; */
-    transform: translate(100vw, 0);
+    transform: translate(200vw, 0);
+}
+
+.open-container {
+    background:rgb(0, 0, 0, 15%) !important;
+    transition: background 100ms ease-in-out !important; 
+    pointer-events:all !important;
+}
+
+.sidebar {
+    position: absolute;
+    background:rgb(0, 0, 0, 0%);
+    transition: background 100ms ease-in-out; 
+    /* backdrop-filter: blur(5px); */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 500;
+    pointer-events: none;
 }
 
 @media screen and (min-width: 950px) {
     .sidebar-container {
+        display: none;
+    }
+
+    .sidebar {
         display: none;
     }
 }

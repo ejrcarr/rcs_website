@@ -59,6 +59,7 @@ export const Navbar = () => {
 										<li>Parent</li>
 										<li>Faculty and Staff</li>
 										<li>Alumni</li>
+										<li>22-23 Calender</li>
 									</ul>
 								</div>
 							</li>
@@ -77,7 +78,7 @@ export const Navbar = () => {
 
 			{/* SPANISH VERSION */}
 			{active !== null && (
-				<div className='navbar-items-container flex-vertical'>
+				<div lang='es' className='navbar-items-container flex-vertical'>
 					<div className='navbar-upper-items'>
 						<ul>
 							<li>Personal</li>
@@ -104,6 +105,7 @@ export const Navbar = () => {
 										<li>Padres</li>
 										<li>Profesores y Personal</li>
 										<li>Graduados</li>
+										<li>22-23 Calendario</li>
 									</ul>
 								</div>
 							</li>

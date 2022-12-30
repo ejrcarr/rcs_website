@@ -99,6 +99,7 @@
     text-decoration: none;
     gap: 0 !important;
     list-style: none;
+    width: 200px;
   }
   
   .dropdown li {
@@ -109,6 +110,7 @@
     text-align: center;
     font-weight: 400;
     font-size: .9rem;
+    padding: 15px 0;
   }
   
   .resource-menu-item {
@@ -116,7 +118,7 @@
   }
 
   .resources-dropdown {
-    left: -2px;
+    left: -25px;
     top: 35px;
   }
 
@@ -140,6 +142,14 @@
   }
 
   @media screen and (max-width: 950px) {
+    /* .navbar-container {
+      width: 100vw;
+      z-index: 999;
+      position: fixed;
+      top: 0;
+      box-shadow: var(--box-shadow-0);
+    } */
+
     .navbar-items-container, .logo-long-text {
       display: none;
     }
