@@ -36,12 +36,9 @@ export const Navbar = () => {
 				<div className='navbar-items-container flex-vertical'>
 					<div className='navbar-upper-items'>
 						<ul>
-							<li>Staff</li>
-							<li>Careers</li>
-							<li>
-								<Link to='/about'>About Us</Link>
-							</li>
-
+							<li>Faculty & Staff</li>
+							<li>Students</li>
+							<li>Parents</li>
 							{/* Why RCS? */}
 							<li onClick={toggleSpanishSetting}>Español</li>
 							<li>Donate</li>
@@ -49,8 +46,11 @@ export const Navbar = () => {
 					</div>
 					<div className='navbar-items'>
 						<ul>
-							<li>Events</li>
-							<li>Enrollment</li>
+							<Link to='/about'>
+								<li>About RCS</li>
+							</Link>
+							<li>Admissions</li>
+							<li>Academics</li>
 							<li className='menu-drop resource-menu-item'>
 								Resources{' '}
 								<i
@@ -67,13 +67,8 @@ export const Navbar = () => {
 									</ul>
 								</div>
 							</li>
-							<li>News</li>
-							<li className='menu-drop more-menu-item'>
-								More{' '}
-								<i
-									className='fa fa-caret-down dropdown-arrow'
-									aria-hidden='true'
-								></i>
+							<li className='search-icon' id='search-icon'>
+								<i className='fas fa-search'></i>
 							</li>
 						</ul>
 					</div>
@@ -85,9 +80,9 @@ export const Navbar = () => {
 				<div lang='es' className='navbar-items-container flex-vertical'>
 					<div className='navbar-upper-items'>
 						<ul>
-							<li>Personal</li>
-							<li>Carreras</li>
-							<li>Sobre RCS</li>
+							<li>Profesores y Personal</li>
+							<li>Estudiantes</li>
+							<li>Padres</li>
 							{/* Why RCS? */}
 							<li onClick={toggleEnglishSetting}>English</li>
 							<li>Donar</li>
@@ -95,8 +90,11 @@ export const Navbar = () => {
 					</div>
 					<div className='navbar-items'>
 						<ul>
-							<li>Eventos</li>
-							<li>Inscripión</li>
+							<Link to='/about'>
+								<li>Sobre RCS</li>
+							</Link>
+							<li>Admisiónes</li>
+							<li>Academia</li>
 							<li className='menu-drop resource-menu-item'>
 								Recursos{' '}
 								<i
@@ -113,13 +111,8 @@ export const Navbar = () => {
 									</ul>
 								</div>
 							</li>
-							<li>Noticias</li>
-							<li className='menu-drop more-menu-item'>
-								Más{' '}
-								<i
-									className='fa fa-caret-down dropdown-arrow'
-									aria-hidden='true'
-								></i>
+							<li className='search-icon' id='search-icon'>
+								<i className='fas fa-search'></i>
 							</li>
 						</ul>
 					</div>
