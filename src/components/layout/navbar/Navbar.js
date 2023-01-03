@@ -4,6 +4,7 @@ import './Navbar.css';
 import logo from '../../../imgs/rcs_logo.png';
 import { Link } from 'react-router-dom';
 import { Hamburger } from './Hamburger';
+import { Search } from '../../Search';
 
 export const Navbar = () => {
 	const languageContext = useContext(LanguageContext);
@@ -67,9 +68,7 @@ export const Navbar = () => {
 									</ul>
 								</div>
 							</li>
-							<li className='search-icon' id='search-icon'>
-								<i className='fas fa-search'></i>
-							</li>
+							<Search />
 						</ul>
 					</div>
 				</div>
@@ -112,7 +111,8 @@ export const Navbar = () => {
 								</div>
 							</li>
 							<li className='search-icon' id='search-icon'>
-								<i className='fas fa-search'></i>
+								{/* <i className='fas fa-search'></i> */}
+								<Search />
 							</li>
 						</ul>
 					</div>

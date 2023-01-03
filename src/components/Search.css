@@ -1,0 +1,41 @@
+.navbar-search {
+    position: relative;
+
+}
+
+.navbar-searchbar {
+    opacity: 0;
+    width: 4vw;
+    padding: 10px;
+    border-radius: 20px;
+    position: absolute;
+    transition: width 300ms ease-in-out, opacity 200ms ease-in-out;
+    top: 2px;
+    right: 50px;
+}
+
+.active-searchbar {
+    opacity: 1;
+    font-size: .9rem;
+    width: 50vw;
+    transition: width 300ms ease-in-out, opacity 200ms ease-in-out;
+}
+
+.active-search {
+    opacity: 1;
+    pointer-events: all;
+}
+
+#search-icon {
+    font-size: 1.5rem;
+    border-radius: 50% !important;
+    width: 45px;
+    height: 45px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#search-icon:hover {
+    background: var(--hover-color);
+}

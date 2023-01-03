@@ -146,10 +146,16 @@
     transform: rotate(-180deg);
   }
 
-  #search-icon {
-    font-size: 1.5rem;
-    border-radius: 50% !important;
-    padding: 10px;
+  .navbar-container .inactive li{
+    opacity: 0;
+    pointer-events: none !important;
+    visibility: hidden;
+  }
+
+  .navbar-container .inactive a {
+    pointer-events: none !important;
+    cursor: default !important;
+    visibility: hidden;
   }
 
   @media screen and (max-width: 950px) {
