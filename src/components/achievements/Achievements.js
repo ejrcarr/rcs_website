@@ -78,7 +78,8 @@ export const Achievements = () => {
 			img: athletic_img,
 			title: 'Athletics',
 			spanishTitle: 'Athletico',
-			english: '',
+			english:
+				'Teams from RCS have consistently won Regional and Conference Championships',
 			spanish: '',
 		},
 	];
