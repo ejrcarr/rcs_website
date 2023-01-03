@@ -37,18 +37,33 @@ export const Search = () => {
 				className='searchbar-form'
 				onSubmit={searchActive ? onSubmit : handleSearch}
 			>
-				<input
-					type='text'
-					name='text'
-					placeholder='Search RCS...'
-					value={text}
-					className={
-						searchActive
-							? 'navbar-searchbar active-searchbar'
-							: 'navbar-searchbar'
-					}
-					onChange={onChange}
-				/>
+				<div className='search'>
+					<input
+						type='text'
+						name='text'
+						placeholder='Search RCS...'
+						value={text}
+						className={
+							searchActive
+								? 'navbar-searchbar active-searchbar'
+								: 'navbar-searchbar'
+						}
+						onChange={onChange}
+					/>
+					<button
+						className={
+							searchActive
+								? 'close-search-button'
+								: 'close-search-button inactive-button'
+						}
+						id='close-search'
+						type='button'
+						onClick={deactivateSearchbar}
+					>
+						<i class='fas fa-times-circle'></i>
+					</button>
+				</div>
+
 				<button className='search-icon' id='search-icon'>
 					<i className='fas fa-search'></i>
 				</button>
