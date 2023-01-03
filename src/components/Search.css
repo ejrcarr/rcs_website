@@ -12,6 +12,7 @@
     transition: width 300ms ease-in-out, opacity 200ms ease-in-out;
     top: 2px;
     right: 50px;
+    pointer-events: none;
 }
 
 .close-search-button {
@@ -30,6 +31,7 @@
 .active-searchbar {
     opacity: 1;
     font-size: .9rem;
+    pointer-events: all;
     width: 50vw;
     transition: width 300ms ease-in-out, opacity 200ms ease-in-out;
 }
