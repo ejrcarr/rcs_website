@@ -9,7 +9,7 @@
     padding: 10px;
     border-radius: 20px;
     position: absolute;
-    transition: width 300ms ease-in-out, opacity 200ms ease-in-out;
+    transition: width 200ms ease-in-out, opacity 200ms ease-in-out;
     top: 2px;
     right: 50px;
     pointer-events: none;
@@ -18,7 +18,7 @@
 .close-search-button {
     color: var(--light-grey-color-0);
     font-size: 1.5rem;
-    top: 8px;
+    top: 9px;
     right: 65px;
     z-index: 2;
     position: absolute;
@@ -32,8 +32,7 @@
     opacity: 1;
     font-size: .9rem;
     pointer-events: all;
-    width: 50vw;
-    transition: width 300ms ease-in-out, opacity 200ms ease-in-out;
+    width: clamp(200px, 50vw, 650px);
 }
 
 .active-search {
