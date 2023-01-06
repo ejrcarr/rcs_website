@@ -76,43 +76,6 @@ a {
   display: inline;
 }
 
-.hero-banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url('./imgs/hero-banner.png');
-  width: 100vw;
-  height: 50vh;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  box-shadow: 0 1px 3px 1px black;
-}
-
-.hero-banner:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: radial-gradient(transparent 0%, black 100%);
-  z-index: 3;
-}
-
-.hero-text {
-  color: white;
-  text-align: center;
-  font-size: clamp(2rem, 8vw,4rem);
-  z-index: 4;
-  padding: 25px 0;
-  display: inline-block;
-  backdrop-filter: blur(2px);
-  background:rgb(0, 0, 0, .4);
-  border: 2px solid white;
-  width: clamp(200px, 70vw, 80%);
-}
-
 .app-promo {
   content: '';
   border: 50px solid white;
