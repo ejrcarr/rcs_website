@@ -60,7 +60,7 @@ export const Search = () => {
 						type='button'
 						onClick={deactivateSearchbar}
 					>
-						<i class='fas fa-times-circle'></i>
+						<i className='fas fa-times-circle'></i>
 					</button>
 				</div>
 
