@@ -110,10 +110,7 @@ export const Navbar = () => {
 									</ul>
 								</div>
 							</li>
-							<li className='search-icon' id='search-icon'>
-								{/* <i className='fas fa-search'></i> */}
-								<Search />
-							</li>
+							<Search />
 						</ul>
 					</div>
 				</div>
