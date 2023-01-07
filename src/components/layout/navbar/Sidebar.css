@@ -7,7 +7,7 @@
     right: 0;
     top: 0;
     height: 100vh;;
-    width: 500px;
+    width: 70vw;
     box-shadow: inset 0 0 0 1px #dedddc, 0 0 16px 0 rgb(0 0 0 / 15%);
     transition: transform 250ms ease-in-out;
     z-index: 888;
@@ -51,12 +51,24 @@
     pointer-events: none;
 }
 
+@media screen and (max-width: 600px) {
+    .sidebar-container {
+        width: 100vw;
+    }
+
+    .fixed {
+        position: relative;
+    }
+}
+
 @media screen and (min-width: 950px) {
     .sidebar-container {
         display: none;
+        width: 80vw;
     }
 
     .sidebar {
         display: none;
     }
 }
+
