@@ -1,0 +1,113 @@
+/* 
+
+.newscards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.newscard-container {
+    display: flex;
+    gap: 25px;
+    background: var(--dark-grey-color-1);
+    border: 1px solid var(--light-grey-color-0);
+    padding: 25px 40px;
+}
+
+.newscard-container img {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    object-fit: cover;
+    clip-path: fill-box;
+    overflow: hidden;
+} */
+
+.newscards-wrapper {
+    display: grid;
+    grid-template-areas: "one one one two"
+                         "one one one three"
+                         "four four four four";
+    gap: 10px;
+    position: relative;
+}
+
+.newscards-wrapper div:nth-child(1) {
+    width: 60vw;
+    position: relative;
+    grid-area: one;
+} 
+
+.newscards-wrapper div:nth-child(1) > img {
+    height: 400px;
+} 
+
+.newscards-wrapper div:nth-child(2) {
+    grid-area: two;
+} 
+
+.newscards-wrapper div:nth-child(3) {
+    grid-area: three;
+} 
+
+.newscards-wrapper div:nth-child(4) {
+    grid-area: four;
+} 
+
+.newscard-container img {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    object-fit: cover;
+    clip-path: fill-box;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.newscard-container {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.newscard-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, .9) 80%);
+    z-index: 100;
+}
+
+.newscard-container:hover img {
+    scale: 1.05;
+    transition: scale 200ms ease-in-out;
+}
+
+.newscard-container::before {
+    content: "";
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    position: absolute;
+    border: 2px solid rgba(255, 255, 255, .7);
+    z-index: 100;
+}
+
+.newscard-content h2 {
+    font-size: 1.2rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    z-index: 150;
+}
+
+
+/* .newscards-wrapper div:nth-child(even) {
+    flex-direction: row-reverse;
+} */
+
