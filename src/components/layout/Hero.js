@@ -15,7 +15,9 @@ export const Hero = () => {
 				{active !== null && (
 					<h2 className='hero-text'>Ponemos a los niños primero.</h2>
 				)}
-				<button>Enroll</button>
+				<button>
+					Enroll <i className='fas fa-arrow-right'></i>
+				</button>
 			</div>
 		</div>
 	);
