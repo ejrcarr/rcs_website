@@ -7,11 +7,10 @@ export const Main = () => {
 	return (
 		<>
 			<Achievements />
-			<div className='rcs-experience-section'>
+			<div className='news-section'>
 				<h1 className='newscards-title'>News</h1>
 				<NewsCards />
 			</div>
-			<div className='news-section'></div>
 		</>
 	);
 };

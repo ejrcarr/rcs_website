@@ -38,7 +38,7 @@ export const NewsCards = () => {
 					key={news.id}
 					img={news.img}
 					title={news.title}
-					// content={news.content}
+					content={news.content}
 				/>
 			))}
 		</div>
